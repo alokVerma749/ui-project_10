@@ -18,7 +18,7 @@
 
   <p align="center">
     <br />
-    <a href="https://alokverma-uiproject-10.netlify.app/">View Demo</a>
+    <a href="https://alokverma-uiproject-10.netlify.app/">Live Link</a>
   </p>
 </div>
 
@@ -79,10 +79,12 @@ This project is presently deployed in **Netlify Service**
 
 - ✔ HTML 5
 - ✔ CSS 3
+  - ✔ flexbox
   - ✔ CSS Selectors
   - ✔ CSS Positioning
   - ✔ Background property 
 - ✔ Font Awesome
+- ✔ Git and Github
 <!-- NOTE -->
 
 ## Note
