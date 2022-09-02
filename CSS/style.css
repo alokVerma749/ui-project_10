@@ -10,19 +10,19 @@ body {
   overflow: hidden;
   color: #ffffff;
 }
+/* Header starts here */
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
   padding: 10px;
 }
-.logo {
-  width: 20vw;
-  position: relative;
+.hamburger{
+  display: none;
 }
-.logo img {
-  position: relative;
-  top: 20%;
-  left: 20%;
+.logo img{
+  width: 150px;
 }
 nav {
   padding: 10px;
@@ -43,6 +43,10 @@ nav {
 .contact img {
   padding-right: 10px;
 }
+/* Header starts here */
+
+
+/* Main section starts here */
 main {
   display: flex;
 }
@@ -133,6 +137,73 @@ button {
   background-color: #ffffff;
 }
 .tiny-box img {
+
   color: black;
   margin: 0 0 0 30%;
+}
+
+/* Media Query */
+@media screen and (max-width:850px){
+  body{
+    width: 100vw;
+    padding: 0;
+    overflow: auto;
+  }
+  .hamburger{
+    display: block;
+  }
+  nav{
+    width: fit-content;
+  }
+  nav .list-item,
+  nav .contact-delails {
+    display: none;
+  }
+  .logo img{
+    width: 120px;
+  }
+  header{
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+
+  /* Main section */
+  main{
+    flex-direction: column;
+  }
+  .main-text{
+    text-align: center;
+    height: fit-content;
+    margin: 0 auto;
+    width: 79vw;
+  }
+  .main-text h1{
+    font-size: 30px;
+    width: 100%;
+  }
+  .cards{
+    position: static;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  .box{
+    position: static;
+    text-align: center;
+  }
+  .tiny-box{
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+  .tiny-box img{
+    margin: 0 auto;
+  }
+  .line, .dot{
+    display: none;
+  }
 }
